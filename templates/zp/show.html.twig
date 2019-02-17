@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Task book{% endblock %}
+
+{% block body %}
+    <h1>{{ zp.dataPay|date("d.m.Y") }}</h1>
+    <p>{{ zp.sum }} грн.</p>
+    <p>{{ zp.note }}</p>
+    <hr>
+    <a href="/">Go Back</a>
+{% endblock %}
+

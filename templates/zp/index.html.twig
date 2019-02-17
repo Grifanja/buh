@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Zps{% endblock %}
+
+{% block body %}
+    {% if zps %}
+        <table id="zps" class="table table-striped">
+            <thead>
+            <tr>
+                <th>sum</th>
+                <th>note</th>
+                <th>data</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for zp in zps %}
+                <tr>
+                    <td>{{ zp.sum }} грн.</td>
+                    <td>{{ zp.note }}</td>
+                    <td>{{ zp.dataPay|date("d.m.Y") }}</td>
+                    <td>
+                        <a href="/zp/{{ zp.id }}" class="btn btn-dark">Show</a>
+                        <a href="/zp/edit/{{ zp.id }}" class="btn btn-light" data-id="{{ zp.id }}">Edit</a>
+                        <a href="#" class="btn btn-danger delete-tesk" data-id="{{ zp.id }}">Delete</a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No zps to display</p>
+    {% endif %}
+{% endblock %}
+
+{%  block javascripts %}
+<script src="/js/main.js"></script>
+{% endblock %}
+
