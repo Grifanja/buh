@@ -1,4 +1,4 @@
-const tasks = document.getElementById('zps');
+const tasks = document.getElementBy('123');
 
 if(tasks){
     tasks.addEventListener('click',e => {

@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Zps{% endblock %}
+
+{% block body %}
+    {% if esvs %}
+        <table id="esvs" class="table table-striped">
+            <thead>
+            <tr>
+                <th>sum</th>
+                <th>year</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for esv in esvs %}
+                <tr>
+                    <td>{{ esv.sum }} грн.</td>
+                    <td>{{ esv.year }}</td>
+                    <td>
+                        <a href="/esv/edit/{{ esv.id }}" class="btn btn-light" data-id="{{ esv.id }}">Edit</a>
+                        <a href="#" class="btn btn-danger delete-tesk" data-id="{{ esv.id }}">Delete</a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No esvs to display</p>
+    {% endif %}
+{% endblock %}
+
+{%  block javascripts %}
+<script src="/js/main.js"></script>
+{% endblock %}
+

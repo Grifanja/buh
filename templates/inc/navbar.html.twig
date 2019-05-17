@@ -1,18 +1,19 @@
 <nav class="navbar navbar-expand-sm navbar-dark bg-primary mb-3">
     <div class="container">
-        <a href="/task" class="navbar-brand">Zp</a>
+        <a href="/task" class="navbar-brand">SPD</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-nav">
             <span class="navbar-toggle-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="mobile-nav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a href="/" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/zp/new" class="nav-link">New zp</a>
-                </li>
+                {% if naviItems  is defined %}
+                    {% for naviItem in naviItems %}
+                        <li class="nav-item">
+                            <a href="{{ naviItem.href }}" class="nav-link">{{ naviItem.name }}</a>
+                        </li>
+                    {% endfor %}
+                {% endif %}
             </ul>
         </div>
     </div>

@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %}
+
+
+{% block title %}Zps{% endblock %}
+
+{% block body %}
+    <div class="row" style="width: 90%">
+    <div class="col" style="width: 500px">
+    {% if zps  is defined %}
+        <caption>Начисления</caption>
+        <table id="zps" class="table table-striped" style="width: 500px;border: groove;">
+            <thead>
+            <tr>
+                <th>year</th>
+                <th>sum</th>
+                <th>5%</th>
+                <th>pay 5%</th>
+                <th>esv</th>
+                <th>pay esv</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for key, sum in sum_zp %}
+                <tr>
+                    <td style="width: 20px;">{{ key  }}</td>
+                    <td>{{ sum }}</td>
+                    <td>{{ sum*0.05 }}</td>
+                    <td>{{ sum }}</td>
+                    <td>{{ sum }}</td>
+                    <td>{{ sum }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No zps to display</p>
+    {% endif %}
+    </div>
+    <div class="col" style="width: 100px">
+    {% if esvs  is defined %}
+        <caption>Есв</caption>
+        <table id="esvs" class="table table-striped" style="width: 100px;border: groove;">
+
+            <thead>
+            <tr>
+                <th>sum</th>
+                <th>year</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for esv in esvs %}
+                <tr>
+                    <td style="width: 20px;">{{ esv.sum/100|number_format(0, '.') }}</td>
+                    <td style="width: 10px;">{{ esv.year }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No esvs to display</p>
+    {% endif %}
+    </div>
+    </div>
+{% endblock %}
+
+
+{%  block javascripts %}
+<script src="/js/main.js"></script>
+{% endblock %}
+

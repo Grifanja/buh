@@ -1,0 +1,71 @@
+{% extends 'base.html.twig' %}
+
+
+{% block title %}Zps{% endblock %}
+
+{% block body %}
+    <div id="canvas">
+        <canvas id="clip" style="margin: 10px;"></canvas>
+    </div>
+
+
+    <div class="row" >
+    <div>
+    {% if zps  is defined %}
+        <table id="zps" class="table table-striped" style="width: 500px;border: groove; margin-left: 30px">
+            <tbody>
+            <tr>
+                <td style="width:100px;height:100px;border-style:outset;"></td>
+                <td style="width:100px;height:100px;border-style:outset;"><div id="root"></div></td>
+                <td style="width:100px;height:100px;border-style:outset;"></td>
+                <td style="width:100px;height:100px;border-style:outset;"></td>
+                <td style="width:100px;height:100px;border-style:outset;"></td>
+            </tr>
+            <tr>
+                <td style="width:100px;height:100px;border-style:outset;"></td>
+                <td style="width:100px;height:100px;border-style:outset;"></td>
+                <td style="width:100px;height:100px;border-style:outset;"></td>
+                <td style="width:100px;height:100px;border-style:outset;"></td>
+                <td style="width:100px;height:100px;border-style:outset;"></td>
+            </tr>
+            <tr>
+                <td style="width:100px;height:100px;border-style:outset;"></td>
+                <td style="width:100px;height:100px;border-style:outset;"></td>
+                <td style="width:100px;height:100px;border-style:outset;"></td>
+                <td style="width:100px;height:100px;border-style:outset;"></td>
+                <td style="width:100px;height:100px;border-style:outset;"></td>
+            </tr>
+            <tr>
+                <td style="width:100px;height:100px;border-style:outset;"></td>
+                <td style="width:100px;height:100px;border-style:outset;"></td>
+                <td style="width:100px;height:100px;border-style:outset;"></td>
+                <td style="width:100px;height:100px;border-style:outset;"></td>
+                <td style="width:100px;height:100px;border-style:outset;"></td>
+            </tr>
+            <tr>
+                <td style="width:100px;height:100px;border-style:outset;"></td>
+                <td style="width:100px;height:100px;border-style:outset;"></td>
+                <td style="width:100px;height:100px;border-style:outset;"></td>
+                <td style="width:100px;height:100px;border-style:outset;"></td>
+                <td style="width:100px;height:100px;border-style:outset;"></td>
+            </tr>
+            </tbody>
+        </table>
+    {% else %}
+        <p>No zps to display</p>
+    {% endif %}
+    </div>
+    <div class="col" style="width: 100px">
+
+    </div>
+    </div>
+{% endblock %}
+
+
+
+{%  block javascripts %}
+    <script src="https://fb.me/react-0.14.7.js"></script>
+    <script src="https://fb.me/react-dom-0.14.7.js"></script>
+ <script src="/js/game.js"></script>
+{% endblock %}
+
