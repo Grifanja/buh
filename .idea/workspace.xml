@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f969703f-ff7f-48cd-86d2-764a07f037c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/EsvController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/EsvController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ZpController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ZpController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/esv/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/esv/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/zp/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/zp/index.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -422,25 +417,25 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.15.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Controller" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="settings.webpack" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\OSPanel\domains\buh\templates\game" />
-      <recent name="C:\OSPanel\domains\buh\src\Controller" />
-      <recent name="C:\OSPanel\domains\buh\src\Form\Elements" />
-      <recent name="C:\OSPanel\domains\buh\src\Repository" />
-      <recent name="C:\OSPanel\domains\buh\templates" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\OSPanel\domains\buh" />
       <recent name="C:\OSPanel\domains\buh\src\Controller" />
       <recent name="C:\OSPanel\domains\buh\public\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\buh\src\Controller" />
+      <recent name="C:\OSPanel\domains\buh\templates\game" />
+      <recent name="C:\OSPanel\domains\buh\src\Form\Elements" />
+      <recent name="C:\OSPanel\domains\buh\src\Repository" />
+      <recent name="C:\OSPanel\domains\buh\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -529,7 +524,7 @@
       <workItem from="1558375203313" duration="2310000" />
       <workItem from="1558413992418" duration="833000" />
       <workItem from="1558779882883" duration="1559000" />
-      <workItem from="1558781810323" duration="2320000" />
+      <workItem from="1558781810323" duration="2525000" />
     </task>
     <task id="LOCAL-00001" summary="main">
       <created>1550438590661</created>
@@ -545,11 +540,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558127795405</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary=" tmp">
+      <created>1558790501080</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1558790501080</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129977000" />
+    <option name="totallyTimeSpent" value="130182000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="889" y="0" width="1038" height="1047" extended-state="0" />
@@ -622,7 +624,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="main" />
-    <option name="LAST_COMMIT_MESSAGE" value="main" />
+    <MESSAGE value=" tmp" />
+    <option name="LAST_COMMIT_MESSAGE" value=" tmp" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Controller/DefaultController.php">
