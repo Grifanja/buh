@@ -27,7 +27,7 @@ class ZpController extends AbstractController
     public function index()
     {
         $zps       = $this->getDoctrine()->getRepository(Zp::class)->findAll();
-        $naviItems = NaviItemList::setList(['Home'=>'/','Esv'=>'/esv']);
+        $naviItems = NaviItemList::setList(['Home'=>'/','Esv'=>'/esv','add'=>'/zp/new']);
 
         return $this->render('zp/index.html.twig',['zps'=>$zps,'naviItems'=>$naviItems]);
     }
