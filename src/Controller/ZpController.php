@@ -44,7 +44,7 @@ class ZpController extends AbstractController
         $form = $this->createFormBuilder($zp)
             ->add('data_pay',DateType::class)
             ->add('sum',IntegerType ::class,['attr'=>['class'=>'form-control']])
-            ->add('note',TextareaType::class,['required'=>false,'attr'=>['class'=>'form-control']])
+            ->add('note',TextareaType::class,['required'=>false,'empty_data' =>'','attr'=>['class'=>'form-control']])
             ->add('save',SubmitType::class,['label'=>'Create','attr'=>['class'=>'btn btn-primary mt-3']])
             ->getForm();
 
@@ -61,7 +61,7 @@ class ZpController extends AbstractController
 
         }
 
-            return $this->render('zp/new.html.twig',    ['form' => $form->createView()]);
+        return $this->render('zp/new.html.twig', ['form' => $form->createView()]);
 
     }
 

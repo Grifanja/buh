@@ -32,7 +32,7 @@ class Zp
      * @ORM\GeneratedValue()
      * @ORM\Column(type="string",name="note")
      */
-    private $note;
+    private $note = '';
 
     /**
      * @return mixed
@@ -47,7 +47,7 @@ class Zp
      */
     public function setId($id): void
     {
-        $this->id = $id;
+        $this->id = $id*100;
     }
 
     /**
@@ -85,7 +85,7 @@ class Zp
     /**
      * @return mixed
      */
-    public function getNote()
+    public function getNote(): string
     {
         return $this->note;
     }
