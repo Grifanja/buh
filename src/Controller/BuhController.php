@@ -43,28 +43,7 @@ class BuhController extends AbstractController
         return $this->render('buh/index.html.twig',$data);
     }
 
-    /**
-     * @Route("/test", name="buh_text")
-     */
-    public function test()
-    {
 
-        $product = new Zp();
-        $product->setNote("new one");
-        $product->setSum(23);
-        $product->getYear(2019);
-
-        $entityManager = $this->getDoctrine()->getManager();
-        $entityManager->persist($product);
-        $entityManager->flush();
-
-
-        var_dump($product);echo "<br>";
-        $this->$entityManager->persist($product);
-        $entityManager->flush();
-
-        return $this->render('buh/index.html.twig',$data);
-    }
 
 
 
