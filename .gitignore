@@ -8,6 +8,7 @@
 /vendor/
 /node_modules/
 /docker/
+/grif/
 ###< symfony/framework-bundle ###
 
 ###> symfony/phpunit-bridge ###
